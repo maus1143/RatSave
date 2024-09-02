@@ -118,7 +118,6 @@ if __name__ == '__main__':
         output_format = input("Möchten Sie das Video als MP4 oder MP3 herunterladen? (mp4/mp3): ").strip().lower()
         
         if output_format == 'mp4':
-            # MP4-Downloads verwenden automatisch die beste verfügbare Qualität
             print("Für MP4 wird die beste verfügbare Qualität verwendet.")
             download_videos(video_url, custom_name, output_format, None)
         elif output_format == 'mp3':
